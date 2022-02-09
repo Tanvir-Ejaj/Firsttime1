@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>University Web Design - Easy Tutorials</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="css/all.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+             <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                 <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>About Us</h1>
+        </section>
+        <!---About us Content-->
+        <section class="about-us">
+        <div class="row">
+             <div class="about-col">
+                    <h1>We are the World's largest University</h1> 
+                    <br>
+                       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Enim, culpa velit accusantium modi labore atque? Quo veritatis ullam, cumque provident illum debitis eligendi magnam tempore nisi eos <br> incidunt cum numquam?</p>
+                       <br> <a href="" class="hero-btn red-btn">Explore Now</a>
+                </div>
+            <div class="about-col">
+                <img src="images/about.jpg">
+            </div>
+        </div>
+        </section>
+ <!---Footer-->
+        <section class="footer">
+            <h4>ABOUT US</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <br> Vero, rem? Aliquid odio consequatur impedit repellendus optio quia nobis repudiandae nesciunt,
+            <br> illo voluptatem obcaecati, dignissimos deserunt est unde iusto consequuntur nemo.</p>
+            <div class="icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="fab fa-youtube"></i> by Youtub's Help</p>
+
+        </section>
+<!----javaScript for Toogle Menu------>
+        <script>
+            var navLinks =document.getElementById("navLinks")
+            function showMenu(){
+                navLinks.style.right ="0"
+            }
+            function hideMenu(){
+                navLinks.style.right ="-200px"
+            }
+
+        </script>
+   
+    </body>
+
+</html>

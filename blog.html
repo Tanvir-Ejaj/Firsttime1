@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>University Web Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificate And Online Programs</h1>
+    </section>
+
+    <!-------blog page content-->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certificate.jpg">
+                <h1>Our Certificate And Online Programs 2022</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas neque quo aut dolorem magnam porro
+                    reiciendis ratione fugiat fugit error voluptatem molestias perferendis, ipsum est sequi. Cum
+                    corporis perferendis molestiae.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et debitis quod aliquid atque, autem quae
+                    tempore veniam amet quos excepturi accusamus, fugit, explicabo nihil. Iste sit voluptatibus
+                    quibusdam enim iusto?</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas molestias magni placeat ipsa, sunt ex
+                    dolorem nulla fugiat distinctio cum nihil nam esse enim officia incidunt, voluptatem tempora, totam
+                    maiores?</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nisi vitae, similique iure
+                    assumenda ad consequuntur asperiores consectetur distinctio fuga provident nulla velit sapiente
+                    dolorum. Eos sint mollitia quisquam veritatis!</p>
+
+
+                <div class="comment-Box">
+                    <h3>Leave a Comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">Post Comment</button>
+                    </form>
+
+                </div>
+
+            </div>
+            <div class="blog-right">
+                <h3>Post Catagories</h3>
+                <div>
+                    <span>Bussniess Anylaytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Auto Cad</span>
+                    <span>41</span>
+                </div>
+                <div>
+                    <span>Journalism</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Machine learning</span>
+                    <span>34</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!---Footer-->
+    <section class="footer">
+        <h4>ABOUT US</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <br> Vero, rem? Aliquid odio consequatur impedit repellendus optio quia nobis repudiandae nesciunt,
+            <br> illo voluptatem obcaecati, dignissimos deserunt est unde iusto consequuntur nemo.
+        </p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fab fa-youtube"></i> by Youtub's Help</p>
+
+    </section>
+    <!----javaScript for Toogle Menu------>
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+
+    </script>
+
+</body>
+
+</html>
